@@ -21,7 +21,7 @@ namespace TetrisGame
 		// I think every sub class must override these methods
 		for(int i = 0; i < CHIP_NUM; ++ i)
 		{
-			CCAssert(m_chips[i]);
+			CCAssert(m_chips[i], "");
 			m_chips[i]->tileDown();
 		}
 		-- m_top;
@@ -30,7 +30,7 @@ namespace TetrisGame
 	{
 		for(int i = 0; i < CHIP_NUM; ++ i)
 		{
-			CCAssert(m_chips[i]);
+			CCAssert(m_chips[i], "");
 			m_chips[i]->tileLeft();
 		};
 		-- m_left; 
@@ -39,7 +39,7 @@ namespace TetrisGame
 	{
 		for(int i = 0; i < CHIP_NUM; ++ i)
 		{
-			CCAssert(m_chips[i]);
+			CCAssert(m_chips[i], "");
 			m_chips[i]->tileRight();
 		}
 		++ m_left;
@@ -371,7 +371,7 @@ namespace TetrisGame
 		case 6:
 			return new HTetris(chipList, left, top);
 		default:
-			CCAssert(false);
+			CCAssert(false, "");
 		}
 		return NULL;
 	}
