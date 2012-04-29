@@ -131,7 +131,7 @@ namespace TetrisGame
 			m_curChips[i] = new TetrisChip(this);
 		}
 		m_curTetris = TetrisFactory::generateATetris(m_curChips, left, top);
-		CCAssert(m_curTetris);
+		CCAssert(m_curTetris, "");
 	}
 	void  GamePlay::destroyTetris(void)
 	{
@@ -219,12 +219,12 @@ namespace TetrisGame
 	}
 	void  GamePlay::normalDown(void)
 	{
-		CCAssert(m_curTetris);
+		CCAssert(m_curTetris,"");
 		m_curTetris->tileDown();
 	}
 	void  GamePlay::quickDown(void)
 	{
-		CCAssert(m_curTetris);
+		CCAssert(m_curTetris, "");
 		for(;;)
 		{
 			m_collisionType = checkCollision();
@@ -235,7 +235,7 @@ namespace TetrisGame
 	}
 	void  GamePlay::normalLeft(void)
 	{
-		CCAssert(m_curTetris);
+		CCAssert(m_curTetris, "");
 		m_collisionType = checkCollision();
 		if(m_collisionType & Tetris::COLLISION_LEFT)
 			return;
@@ -243,7 +243,7 @@ namespace TetrisGame
 	}
 	void GamePlay::normalRight(void)
 	{
-		CCAssert(m_curTetris);
+		CCAssert(m_curTetris, "");
 		m_collisionType = checkCollision();
 		if(m_collisionType & Tetris::COLLISION_RIGHT)
 			return;
@@ -251,7 +251,7 @@ namespace TetrisGame
 	}
 	void GamePlay::rotation(void)
 	{
-		CCAssert(m_curTetris);
+		CCAssert(m_curTetris, "");
 		m_curTetris->rotation();
 		if(rotationCollision())
 			m_curTetris->unRotation();
@@ -270,7 +270,7 @@ namespace TetrisGame
 					for(int k = 0; k < Tetris::CHIP_NUM; ++ k)
 					{
 						TetrisChip * chip = m_curChips[k];
-						CCAssert(chip);
+						CCAssert(chip, "");
 						if(chip->getTileX() == i && chip->getTileY() == j)
 							return true;
 					}

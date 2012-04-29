@@ -17,6 +17,12 @@
 		784521D214EBA449009D533B /* HelloWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = 784521CA14EBA449009D533B /* HelloWorld.png */; };
 		78891AB714EA205A0072482D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 78891AB614EA205A0072482D /* Default.png */; };
 		78891AB914EA20C70072482D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 78891AB814EA20C70072482D /* Icon.png */; };
+		9466B7CC154D7B840011F87D /* GamePlay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9466B7C0154D7B840011F87D /* GamePlay.cpp */; };
+		9466B7CD154D7B840011F87D /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9466B7C2154D7B840011F87D /* HelloWorldScene.cpp */; };
+		9466B7CE154D7B840011F87D /* Tetris.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9466B7C4154D7B840011F87D /* Tetris.cpp */; };
+		9466B7CF154D7B840011F87D /* TetrisChip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9466B7C6154D7B840011F87D /* TetrisChip.cpp */; };
+		9466B7D0154D7B840011F87D /* Tile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9466B7C8154D7B840011F87D /* Tile.cpp */; };
+		9466B7D1154D7B840011F87D /* TileMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9466B7CA154D7B840011F87D /* TileMap.cpp */; };
 		AD7C5EC514751287008E5647 /* CCThread_ios.mm in Sources */ = {isa = PBXBuildFile; fileRef = AD7C5EC414751287008E5647 /* CCThread_ios.mm */; };
 		AD7C5ED2147512AD008E5647 /* FontLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = AD7C5EC7147512AD008E5647 /* FontLabel.h */; };
 		AD7C5ED3147512AD008E5647 /* FontLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7C5EC8147512AD008E5647 /* FontLabel.m */; };
@@ -57,7 +63,6 @@
 		BF233C2E1341748900494987 /* CCNS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF233C2C1341748900494987 /* CCNS.cpp */; };
 		BF233C2F1341748900494987 /* CCNS.h in Headers */ = {isa = PBXBuildFile; fileRef = BF233C2D1341748900494987 /* CCNS.h */; };
 		BF23D4E7143315EB00657E08 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF23D4E3143315EB00657E08 /* AppDelegate.cpp */; };
-		BF23D4E8143315EB00657E08 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF23D4E5143315EB00657E08 /* HelloWorldScene.cpp */; };
 		BF315F90133DDEB000E0532D /* CCFileUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BF315F8D133DDEAF00E0532D /* CCFileUtils.h */; };
 		BF315F91133DDEB000E0532D /* CCSAXParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF315F8E133DDEAF00E0532D /* CCSAXParser.cpp */; };
 		BF315F92133DDEB000E0532D /* CCSAXParser.h in Headers */ = {isa = PBXBuildFile; fileRef = BF315F8F133DDEAF00E0532D /* CCSAXParser.h */; };
@@ -302,6 +307,18 @@
 		784521CA14EBA449009D533B /* HelloWorld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HelloWorld.png; sourceTree = "<group>"; };
 		78891AB614EA205A0072482D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../ios/Default.png; sourceTree = "<group>"; };
 		78891AB814EA20C70072482D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../ios/Icon.png; sourceTree = "<group>"; };
+		9466B7C0154D7B840011F87D /* GamePlay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamePlay.cpp; sourceTree = "<group>"; };
+		9466B7C1154D7B840011F87D /* GamePlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePlay.h; sourceTree = "<group>"; };
+		9466B7C2154D7B840011F87D /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
+		9466B7C3154D7B840011F87D /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldScene.h; sourceTree = "<group>"; };
+		9466B7C4154D7B840011F87D /* Tetris.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tetris.cpp; sourceTree = "<group>"; };
+		9466B7C5154D7B840011F87D /* Tetris.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tetris.h; sourceTree = "<group>"; };
+		9466B7C6154D7B840011F87D /* TetrisChip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TetrisChip.cpp; sourceTree = "<group>"; };
+		9466B7C7154D7B840011F87D /* TetrisChip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TetrisChip.h; sourceTree = "<group>"; };
+		9466B7C8154D7B840011F87D /* Tile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tile.cpp; sourceTree = "<group>"; };
+		9466B7C9154D7B840011F87D /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
+		9466B7CA154D7B840011F87D /* TileMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TileMap.cpp; sourceTree = "<group>"; };
+		9466B7CB154D7B840011F87D /* TileMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileMap.h; sourceTree = "<group>"; };
 		AD7C5EC414751287008E5647 /* CCThread_ios.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CCThread_ios.mm; path = ios/CCThread_ios.mm; sourceTree = "<group>"; };
 		AD7C5EC7147512AD008E5647 /* FontLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontLabel.h; sourceTree = "<group>"; };
 		AD7C5EC8147512AD008E5647 /* FontLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontLabel.m; sourceTree = "<group>"; };
@@ -335,8 +352,6 @@
 		BF233C2D1341748900494987 /* CCNS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNS.h; sourceTree = "<group>"; };
 		BF23D4E3143315EB00657E08 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		BF23D4E4143315EB00657E08 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		BF23D4E5143315EB00657E08 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
-		BF23D4E6143315EB00657E08 /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldScene.h; sourceTree = "<group>"; };
 		BF315F8D133DDEAF00E0532D /* CCFileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCFileUtils.h; sourceTree = "<group>"; };
 		BF315F8E133DDEAF00E0532D /* CCSAXParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCSAXParser.cpp; sourceTree = "<group>"; };
 		BF315F8F133DDEAF00E0532D /* CCSAXParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSAXParser.h; sourceTree = "<group>"; };
@@ -683,10 +698,20 @@
 		BF23D4E2143315EB00657E08 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9466B7C0154D7B840011F87D /* GamePlay.cpp */,
+				9466B7C1154D7B840011F87D /* GamePlay.h */,
+				9466B7C2154D7B840011F87D /* HelloWorldScene.cpp */,
+				9466B7C3154D7B840011F87D /* HelloWorldScene.h */,
+				9466B7C4154D7B840011F87D /* Tetris.cpp */,
+				9466B7C5154D7B840011F87D /* Tetris.h */,
+				9466B7C6154D7B840011F87D /* TetrisChip.cpp */,
+				9466B7C7154D7B840011F87D /* TetrisChip.h */,
+				9466B7C8154D7B840011F87D /* Tile.cpp */,
+				9466B7C9154D7B840011F87D /* Tile.h */,
+				9466B7CA154D7B840011F87D /* TileMap.cpp */,
+				9466B7CB154D7B840011F87D /* TileMap.h */,
 				BF23D4E3143315EB00657E08 /* AppDelegate.cpp */,
 				BF23D4E4143315EB00657E08 /* AppDelegate.h */,
-				BF23D4E5143315EB00657E08 /* HelloWorldScene.cpp */,
-				BF23D4E6143315EB00657E08 /* HelloWorldScene.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -1365,7 +1390,12 @@
 				BF4DE6AD138BB89600CF907D /* RootViewController.mm in Sources */,
 				D4ABB4B313B4395300552E6E /* main.m in Sources */,
 				BF23D4E7143315EB00657E08 /* AppDelegate.cpp in Sources */,
-				BF23D4E8143315EB00657E08 /* HelloWorldScene.cpp in Sources */,
+				9466B7CC154D7B840011F87D /* GamePlay.cpp in Sources */,
+				9466B7CD154D7B840011F87D /* HelloWorldScene.cpp in Sources */,
+				9466B7CE154D7B840011F87D /* Tetris.cpp in Sources */,
+				9466B7CF154D7B840011F87D /* TetrisChip.cpp in Sources */,
+				9466B7D0154D7B840011F87D /* Tile.cpp in Sources */,
+				9466B7D1154D7B840011F87D /* TileMap.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1519,6 +1549,7 @@
 				PRODUCT_NAME = HelloWorld;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "armv6 armv7 i386";
 			};
 			name = Debug;
@@ -1544,7 +1575,7 @@
 				PRODUCT_NAME = HelloWorld;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
+				VALIDATE_PRODUCT = NO;
 				VALID_ARCHS = "armv6 armv7 i386";
 			};
 			name = Release;

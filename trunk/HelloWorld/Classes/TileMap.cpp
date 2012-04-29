@@ -45,7 +45,7 @@ namespace TetrisGame
 	}
 	void TileMap::delTile(int x, int y)
 	{
-		CCAssert(m_tiles[x][y]);
+		CCAssert(m_tiles[x][y], "");
 		delete m_tiles[x][y];
 		m_tiles[x][y] = NULL;
 	}

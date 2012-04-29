@@ -36,9 +36,9 @@ namespace TetrisGame
 
 	TetrisChip::TetrisChip(CCNode * layer)
 	{
-		CCAssert(layer);
+		CCAssert(layer, "");
 		m_sprite = CCSprite::spriteWithFile("HelloWorld.png", CCRect(220,100, 20,20));
-		CCAssert(m_sprite);
+		CCAssert(m_sprite, "");
 		layer->addChild(m_sprite);
 		m_layer = layer;
 	}
@@ -70,7 +70,7 @@ namespace TetrisGame
 	{
 		float posX, posY;
 		TileMap::tileToPos(m_tileX, m_tileY, posX, posY);
-		CCAssert(m_sprite);
+		CCAssert(m_sprite, "");
 		m_sprite->setPosition(CCPointMake(posX, posY));
 	}
 }
