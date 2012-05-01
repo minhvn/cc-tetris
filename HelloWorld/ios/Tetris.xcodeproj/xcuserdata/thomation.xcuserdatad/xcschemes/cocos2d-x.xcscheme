@@ -16,7 +16,7 @@
                BlueprintIdentifier = "BF4927C31289199700A09262"
                BuildableName = "libcocos2d.a"
                BlueprintName = "cocos2d-x"
-               ReferencedContainer = "container:HelloWorld.xcodeproj">
+               ReferencedContainer = "container:Tetris.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
